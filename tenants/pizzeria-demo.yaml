@@ -1,0 +1,48 @@
+# Plantilla de negocio. Para un cliente nuevo: copia este archivo, cambia los datos
+# y define su token en la variable de entorno indicada en token_env.
+id: pizzeria-demo
+name: Pizzería Don Mario
+phone_number_id: "123456789012345"      # Meta → WhatsApp → Configuración de la API
+token_env: TOKEN_PIZZERIA_DEMO          # el token va en .env, nunca aquí
+currency: "$"
+tone: amable, cercano, con algún emoji ocasional
+
+greeting: |
+  ¡Hola! 👋 Bienvenido a *Pizzería Don Mario* 🍕
+  ¿En qué te ayudamos hoy?
+
+hours: |
+  Lunes a jueves: 1:00 pm – 10:00 pm
+  Viernes a domingo: 1:00 pm – 11:30 pm
+address: Av. Juárez 123, Col. Centro
+maps_url: https://maps.google.com/?q=Av.+Juarez+123
+payment_methods: Efectivo, transferencia y tarjeta (terminal a domicilio)
+order_instructions: |
+  Para pedir, escríbenos:
+  1️⃣ Qué productos y cuántos
+  2️⃣ Tu dirección
+  3️⃣ Forma de pago
+  Y te confirmamos el total y tiempo de entrega. 🛵
+extra_info: |
+  Envío gratis en pedidos mayores a $300. Tiempo de entrega: 30–45 min.
+  Zona de reparto: 5 km a la redonda.
+
+catalog:
+  - name: Pizzas
+    items:
+      - {name: Margarita, price: 149, description: "Tomate, mozzarella y albahaca"}
+      - {name: Pepperoni, price: 169}
+      - {name: Hawaiana, price: 175, description: "Jamón y piña"}
+  - name: Bebidas
+    items:
+      - {name: Refresco 600 ml, price: 30}
+      - {name: Agua de horchata 1 L, price: 45}
+
+faq:
+  - q: ¿Tienen opciones vegetarianas?
+    a: Sí, la Margarita y podemos preparar cualquier pizza sin carne.
+  - q: ¿Hacen facturas?
+    a: Sí, envíanos tus datos fiscales al confirmar el pedido.
+
+handoff_keywords: [humano, asesor, persona, encargado, queja]
+handoff_message: Te comunico con alguien del equipo, en breve te responden. 🙌
